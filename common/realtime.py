@@ -4,9 +4,9 @@ import os
 import time
 from collections import deque
 
-from openpilot.common.threadname import getthreadname
+from common.threadname import getthreadname
 
-from openpilot.system.hardware import PC
+from system.hardware import PC
 
 
 # time step for each process
