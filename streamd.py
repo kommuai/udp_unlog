@@ -47,8 +47,8 @@ class Streamer:
   def update_and_publish(self):
     if self.is_connected():
       self.sm.update()
-      serialised = pickle.dumps(self.sm['navInstruction'], protocol = pickle.DEFAULT_PROTOCOL)
-      self.sock.sendto(serialised, (self.ip, self.port))
+
+      self.sock.sendto(self.sm['navInstruction']).as_builder().to_bytes(), (self.ip, self.port))
 
   def streamd_thread(self):
     while True:
