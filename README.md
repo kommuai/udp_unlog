@@ -10,7 +10,9 @@ Make sure clang, libzmq3-dev, opencl-headers, ocl-icd-opencl-dev, libudev-dev is
 
 ## Installation
 ```conda create -n py311 --file requirements.txt```
+
 In the conda environment, run
+
 ```pip install tqdm cython pycapnp zstd requests smbus2 numpy```
 
 
